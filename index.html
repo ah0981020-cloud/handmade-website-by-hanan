@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abdul Hanan · Handmade Frontend Developer Portfolio</title>
+<meta name="description" content="A sketchbook-style portfolio of Abdul Hanan, a frontend developer from Karachi crafting warm, accessible websites with HTML, CSS and JavaScript.">
+<meta property="og:title" content="Abdul Hanan · Frontend Developer">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c8553d'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23fbf6ea' font-family='cursive'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="pencil" aria-hidden="true"></div>
+
+<header class="nav-wrap">
+  <nav class="strip" aria-label="Primary">
+    <a href="#home" class="logo">Abdul<span>.</span></a>
+    <button id="burger" class="tool" aria-label="Open menu" aria-expanded="false" aria-controls="menu">✎ menu</button>
+    <ul id="menu" class="menu">
+      <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li>
+      <li><button id="theme" class="tool" aria-label="Toggle night paper">☾</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<section id="home" class="hero">
+  <span class="note n1 float" data-depth="14" data-tilt>sketch → code → ship</span>
+  <span class="note n2 float" data-depth="-10" data-tilt>coffee #3 ☕</span>
+  <button class="doodle star d1" aria-label="Spin the star" data-doodle>✦</button>
+  <button class="doodle star d2" aria-label="Spin the star" data-doodle>✺</button>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hand big" id="greet" aria-label="Hello there, welcome to my desk"></p>
+      <h1>Hi, I'm a <span class="scribble">Frontend Developer</span></h1>
+      <p class="lead">I'm Abdul, from Karachi. I turn rough sketches into warm, fast and accessible websites, one careful line of code at a time.</p>
+      <p class="hand avail">Available for freelance work ✦</p>
+      <div class="cta">
+        <a class="label solid" href="#work">See my work</a>
+        <svg class="arrow" viewBox="0 0 120 60" aria-hidden="true"><path d="M4 40 C30 5, 70 5, 108 34 M108 34 l-16 -2 M108 34 l-6 -15"/></svg>
+        <a class="label" href="#contact">Say hello</a>
+      </div>
+    </div>
+    <svg class="desk float" data-depth="8" viewBox="0 0 360 300" role="img" aria-label="Hand-drawn illustration of a developer at a desk with laptop and coffee">
+      <path class="fillc" d="M20 262 C100 254 260 258 340 262" />
+      <path d="M60 262 L66 190 M300 262 L294 190 M50 190 C140 182 240 186 312 190"/>
+      <path class="fillw" d="M96 184 L110 98 C170 92 232 96 262 100 L276 184 Z"/>
+      <path d="M118 112 L130 150 M150 112 h70 M150 130 h50 M150 148 h62"/>
+      <circle cx="82" cy="70" r="26" class="fillc2"/><path d="M74 66 q4 -4 8 0 M90 66 q4 -4 8 0 M74 80 q10 8 20 0"/><path d="M82 96 C60 120 56 160 60 190 M82 96 C104 120 110 150 106 184"/>
+      <path class="fillg" d="M296 160 h34 l-4 28 h-26 Z"/><path d="M330 166 q14 4 0 16 M306 150 q-6 -10 2 -16 M318 150 q-6 -10 2 -16"/>
+      <path class="fills" d="M214 176 l40 -6 -2 10 -40 6 z"/>
+    </svg>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <div class="wrap">
+    <h2 class="hand title" data-reveal>About me <span class="scribble-s"></span></h2>
+    <div class="book" data-reveal>
+      <div class="page left">
+        <figure class="photo tape" data-tilt><div class="img" role="img" aria-label="Profile photo placeholder"><svg viewBox="0 0 100 100"><circle cx="50" cy="38" r="18"/><path d="M16 94 C20 62 80 62 84 94"/></svg></div><figcaption class="hand">me, on a good day</figcaption></figure>
+        <span class="note n3" data-tilt>psst… I draw too ✎</span>
+        <ul class="stats" id="stats"></ul>
+      </div>
+      <div class="page right">
+        <h3 class="hand">Hello again!</h3>
+        <p>I'm a beginner-turned-builder who loves HTML, CSS and JavaScript. I care about layouts that feel human, readable and kind to every screen size.</p>
+        <p class="hand quote">"Build it simple, make it honest, polish it with care."</p>
+        <p>My philosophy: sketch first, ship small, and learn something new from every project.</p>
+        <a class="label solid" href="#" download>Download CV ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="sec alt">
+  <div class="wrap"><h2 class="hand title" data-reveal>Things I'm good at</h2><div class="cards" id="skillGrid"></div></div>
+</section>
+
+<section id="work" class="sec">
+  <div class="wrap">
+    <h2 class="hand title" data-reveal>My work <small class="hand">pinned to the board</small></h2>
+    <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+    <div class="board" id="board"></div>
+  </div>
+</section>
+
+<section id="experience" class="sec alt">
+  <div class="wrap"><h2 class="hand title" data-reveal>Where I've been</h2><ol class="line" id="timeline"></ol></div>
+</section>
+
+<section class="sec" aria-labelledby="svc">
+  <div class="wrap"><h2 class="hand title" id="svc" data-reveal>What I can make for you</h2><div class="cards svc" id="services"></div></div>
+</section>
+
+<section id="contact" class="sec alt">
+  <div class="wrap">
+    <form id="form" class="letter" novalidate data-reveal>
+      <svg class="envelope" viewBox="0 0 120 84" aria-hidden="true"><rect x="4" y="10" width="112" height="70" rx="4"/><path d="M6 14 L60 52 L114 14"/></svg>
+      <h2 class="hand title">Let's Make Something Together</h2>
+      <p class="hand">Dear Abdul,</p>
+      <div class="field"><label for="name">My name is</label><input id="name" name="name" autocomplete="name" required><small class="err hand" id="e-name"></small></div>
+      <div class="field"><label for="email">You can write back at</label><input id="email" name="email" type="email" autocomplete="email" required><small class="err hand" id="e-email"></small></div>
+      <div class="field"><label for="subject">It's about</label><input id="subject" name="subject" required><small class="err hand" id="e-subject"></small></div>
+      <div class="field"><label for="message">Here's the story</label><textarea id="message" name="message" rows="5" required></textarea><small class="err hand" id="e-message"></small></div>
+      <button class="label solid" type="submit">Send Message</button>
+      <p id="sent" class="hand sent" role="status" hidden>Posted! I'll write back soon ✦</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <span class="doodle-s" aria-hidden="true">~ ✦ ~ ○ ~ ✺ ~</span>
+  <a href="#home" class="logo">Abdul<span>.</span></a>
+  <p><a href="mailto:hello@example.com">hello@example.com</a> · <a href="https://github.com/">GitHub</a> · <a href="https://linkedin.com/">LinkedIn</a></p>
+  <p class="hand big">Made with code, coffee &amp; curiosity ☕</p>
+  <p class="small">© <span id="year"></span> Abdul Hanan</p>
+</footer>
+<button id="top" class="tool totop" aria-label="Back to top">↑</button>
+
+<dialog id="modal" aria-labelledby="mT">
+  <button class="tool close" id="mClose" aria-label="Close">✕</button>
+  <div class="shot" id="mShot"></div><h3 class="hand" id="mT"></h3><p id="mD"></p><div class="tags" id="mTags"></div>
+  <div class="cta"><a class="label solid" href="#" data-dead>Live Demo</a><a class="label" href="#" data-dead>GitHub</a></div>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
